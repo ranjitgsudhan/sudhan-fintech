@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 
 const AboutUs = () => {
   return (
-    <section className="max-w-screen-xl mx-auto px-4 sm:px-6">
+    <section className="flex justify-center items-center px-4 sm:px-6 w-full">
       <div className="min-h-screen  text-white py-12 px-4">
         {/* Title */}
         <p className="text-center text-30 font-bold mb-16 pt-10">Sudhan Team</p>
 
         {/* Team Cards */}
-        <div className="flex flex-wrap justify-center gap-9 max-w-6xl mx-auto -ml-10">
+        <div className="flex flex-wrap justify-center gap-5 ">
           {/* Founder 1 */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -19,7 +19,7 @@ const AboutUs = () => {
             transition={{ duration: 0.5 }}
             whileHover={{ scale: 1.03 }}
             viewport={{ once: true }}
-            className="bg-[#111] p-6 rounded-xl text-center shadow-md"
+            className=" p-6 rounded-xl text-center shadow-md"
           >
             <Image
               src="/images/AboutUs/founder1.png"
@@ -43,7 +43,7 @@ const AboutUs = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             whileHover={{ scale: 1.03 }}
             viewport={{ once: true }}
-            className="bg-[#111] p-6 rounded-xl text-center  shadow-md"
+            className="p-6 rounded-xl text-center  shadow-md"
           >
             <Image
               src="/images/AboutUs/founder2.png"
@@ -61,11 +61,11 @@ const AboutUs = () => {
         </div>
 
         {/* Opportunity Section */}
-        <div>
-          <p className="text-center text-30 font-bold mb-16 mt-16 pt-10">
+        <div className="py-16">
+          <h1 className="flex justify-center text-30 font-bold mb-16">
             Opportunity
-          </p>
-          <div className="flex flex-wrap justify-center gap-10 max-w-7xl mx-auto">
+          </h1>
+          <div className="flex flex-wrap justify-center gap-10 md:w-full mx-auto">
             {/* Card 1 */}
             <motion.div
               whileHover={{ scale: 1.05 }}
