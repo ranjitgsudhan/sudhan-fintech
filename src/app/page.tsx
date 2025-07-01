@@ -7,6 +7,8 @@ import Portfolio from "@/components/Home/portfolio";
 import Upgrade from "@/components/Home/upgrade";
 import Perks from "@/components/Home/perks";
 import { Metadata } from "next";
+import Onboard from "@/components/Home/Onboarding";
+import Award from "@/components/Home/award";
 export const metadata: Metadata = {
   title: "CrypGo",
 };
@@ -14,6 +16,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
+    
       <Hero />
       <Work />
       <TimeLine />
@@ -21,6 +24,9 @@ export default function Home() {
       <Portfolio />
       <Upgrade />
       <Perks />
+       <Award/>
+      <Onboard/>
+     
     </main>
   );
 }

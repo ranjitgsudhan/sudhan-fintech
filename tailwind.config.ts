@@ -65,6 +65,7 @@ const config: Config = {
         charcoalGray: "#666C78",
         deepSlate: "#282C36",
         slateGray: "#2F3543",
+        sudhan:"#fb9f0c",
       },
       fontSize: {
         86: [
