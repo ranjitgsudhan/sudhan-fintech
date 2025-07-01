@@ -7,6 +7,7 @@ import Portfolio from "@/components/Home/portfolio";
 import Upgrade from "@/components/Home/upgrade";
 import Perks from "@/components/Home/perks";
 import { Metadata } from "next";
+import AboutUs from "@/AboutUs/AboutUs";
 export const metadata: Metadata = {
   title: "Sudhan Fintech",
 };
@@ -21,6 +22,7 @@ export default function Home() {
       <Portfolio />
       <Upgrade />
       <Perks />
+      <AboutUs/>
     </main>
   );
 }
