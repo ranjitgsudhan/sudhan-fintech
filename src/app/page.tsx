@@ -7,10 +7,14 @@ import Portfolio from "@/components/Home/portfolio";
 import Upgrade from "@/components/Home/upgrade";
 import Perks from "@/components/Home/perks";
 import { Metadata } from "next";
+
 import Onboard from "@/components/Home/Onboarding";
 import Award from "@/components/Home/award";
+
+import AboutUs from "@/AboutUs/AboutUs";
+
 export const metadata: Metadata = {
-  title: "CrypGo",
+  title: "Sudhan Fintech",
 };
 
 export default function Home() {
@@ -26,7 +30,7 @@ export default function Home() {
       <Perks />
        <Award/>
       <Onboard/>
-     
+      <AboutUs/>
     </main>
   );
 }
