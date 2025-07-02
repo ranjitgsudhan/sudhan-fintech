@@ -1,3 +1,5 @@
+"use client";
+import { motion } from 'framer-motion';
 import React from 'react';
 
 const neo = [
@@ -18,7 +20,11 @@ const Neo = () => {
         <h1 className="text-30 font-bold">Solution Neo Landing Platform</h1>
         <div className="flex flex-col md:flex-row justify-center items-center gap-6 p-6">
           {neo.map((item, index) => (
-            <div
+            <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
+            whileHover={{ scale: 1.05 }}
             key={index}
             className="bg-[#FEC637] text-black rounded-2xl shadow-md p-12 w-[80vw] md:w-[30vw] h-[30vh] flex flex-col justify-center text-justify"
           >
@@ -28,7 +34,7 @@ const Neo = () => {
             <p className="text-center text-lg font-medium">
               {item.description}
             </p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
