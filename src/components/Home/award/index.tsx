@@ -19,7 +19,7 @@ const Award = () => {
   }, []);
 
   return (
-    <section className="md:pt-44 sm:pt-24 pt-12 relative z-1">
+    <section id="achievements" className="md:pt-44 sm:pt-24 pt-12 relative z-1">
       <div className="w-full px-4">
         <div
           ref={sectionRef}
