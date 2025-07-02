@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const AboutUs = () => {
   return (
-    <section className="flex justify-center items-center px-4 sm:px-6 w-full">
+    <section id="AboutUs" className="flex justify-center items-center px-4 sm:px-6 w-full">
       <div className="min-h-screen  text-white py-12 px-4">
         {/* Title */}
         <p className="text-center text-30 font-bold mb-16 pt-10">Sudhan Team</p>
