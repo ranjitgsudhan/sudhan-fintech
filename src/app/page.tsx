@@ -14,12 +14,13 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main>
+     <main>
       <Hero />
-
-       <Award/>
-      <Onboard/>
-      <AboutUs/>
+      <AboutUs />
+       <Neo />
+       <GapAnalysis />
+      <Award />
+      <Onboard />
     </main>
   );
 }
