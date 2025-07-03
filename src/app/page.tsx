@@ -6,6 +6,7 @@ import Award from "@/components/Home/award";
 import AboutUs from "@/AboutUs/AboutUs";
 import Neo from "@/components/OurWork/Neo";
 import GapAnalysis from "@/components/OurWork/GapAnalysis";
+import Milestone from "@/components/Home/milestone";
 
 export const metadata: Metadata = {
   title: "Sudhan Fintech",
@@ -15,11 +16,10 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <AboutUs />
-       <Neo />
-       <GapAnalysis />
-      <Award />
-      <Onboard />
+
+       <Award/>
+      <Onboard/>
+      <AboutUs/>
     </main>
   );
 }
