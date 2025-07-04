@@ -68,7 +68,7 @@ const Footer: FC = () => {
             <div className="sm:col-span-2 col-span-6">
               <h3 className="text-white text-24 font-medium">Contact us</h3>
               <p className="text-muted text-opacity-60 text-16 mt-3">
-                SUDHAN FINTECH PRIVATE LIMITED A-9, Udyog Mauli,, Dnyaneshwar
+                SUDHAN FINTECH PRIVATE LIMITED A-9, Udyog Mauli, Dnyaneshwar
                 Nagar, Aurangabad, Aurangabad, Maharashtra, India, 431001
                 +918796306621
               </p>

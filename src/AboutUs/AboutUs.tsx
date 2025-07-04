@@ -7,7 +7,7 @@ const AboutUs = () => {
   return (
     <section
       id="AboutUs"
-      className="flex justify-center items-center w-full h-full pt-12"
+      className="flex justify-center items-center w-full h-full pt-12 pb-2"
     >
       <div className="flex justify-center items-center flex-col gap-6 mx-auto py-16 border-t-2 border-primary ">
         {/* Title */}
@@ -21,7 +21,7 @@ const AboutUs = () => {
             transition={{ duration: 0.5 }}
             whileHover={{ scale: 1.03 }}
             viewport={{ once: true }}
-            className="h-[30rem] w-[20vw] p-6 rounded-xl text-center shadow-md bg-section bg-opacity-10"
+            className="h-[30rem] w-[20vw] p-6 rounded-xl text-center shadow-md "
           >
             <Image
               src="/images/AboutUs/founder1.png"
@@ -47,7 +47,7 @@ const AboutUs = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             whileHover={{ scale: 1.03 }}
             viewport={{ once: true }}
-            className="h-[70vh] w-[30vw] p-6 rounded-xl text-center shadow-md bg-section bg-opacity-10"
+            className="h-[70vh] w-[30vw] p-6 rounded-xl text-center shadow-md "
           >
             <Image
               src="/images/AboutUs/founder2.png"
