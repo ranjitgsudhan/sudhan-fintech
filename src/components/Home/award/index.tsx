@@ -19,11 +19,11 @@ const Award = () => {
   }, []);
 
   return (
-    <section id="achievements" className="md:pt-44 sm:pt-24 pt-12 relative z-1">
+    <section id="achievements" className="md:pt-20 sm:pt-24 pt-12 relative z-1">
       <div className="w-full px-4">
         <div
           ref={sectionRef}
-          className="bg-section bg-opacity-10 px-10 py-12 rounded-3xl border-2 border-opacity-20 border-section relative overflow-hidden"
+          className="bg-section bg-opacity-10 px-10 py-12 rounded-3xl border-2 border-opacity-20 border-section relative overflow-hidden "
         >
           {/* Title */}
           <motion.h2

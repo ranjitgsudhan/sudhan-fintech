@@ -28,9 +28,9 @@ const Milestone = () => {
   }, []);
 
   return (
-    <section className="pt-12 pb-12 md:pt-44 sm:pt-24 px-3 md:px-4 lg:px-6 relative z-1">
-      <div className="w-full max-w-6xl mx-auto pt-6 shadow-lg rounded-2xl">
-        <h1 className="lg:text-[42px] text-[22px] text-center mb-5 pb-5">Milestones</h1>
+    <section className="pt-12 pb-12 md:pt-12 sm:pt-24 px-3 md:px-4 lg:px-6 relative z-1 ">
+      <div className="w-full max-w-6xl mx-auto pt-6 shadow-lg rounded-2xl  border-section bg-opacity-10 p-10 ">
+        <h1 className="lg:text-[42px] text-[39px] text-center mb-5 pb-5 ">Milestones</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 

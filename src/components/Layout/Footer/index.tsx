@@ -9,10 +9,10 @@ import Logo from "../Header/Logo";
 const Footer: FC = () => {
   return (
     <section id="Footer">
-      <footer className="pt-12 bg-[#841618]">
+      <footer className="pt-12 bg-[#841618] flex justify-center items-center px-4">
         <div className="container mx-auto lg:max-w-screen-2xl md:max-w-screen-md">
           <div className="grid grid-cols-1 sm:grid-cols-6 gap-6 pb-5">
-            <div className="sm:col-span-2 col-span-6">
+            <div className="sm:col-span-2 col-span-6 flex flex-col items-center sm:items-start">
               <Logo />
               <div className="flex gap-6 items-center mt-4">
                 <Link href="#" className="group">
@@ -59,7 +59,7 @@ const Footer: FC = () => {
             <div className="sm:col-span-1 col-span-6">
               <h4 className="text-white mb-4 font-medium text-24">About us</h4>
               <p className="text-gray-50 text-opacity-60 text-16 mt-3">
-                Founded in 2021, Sudhan is a new-age financial institution that
+                Sudhan is a new-age financial institution that
                 offers gold loans to those in need, specifically in villages and
                 tier-III cities, in association with the extensive network of
                 credit societies across many states.
@@ -68,11 +68,9 @@ const Footer: FC = () => {
             <div className="sm:col-span-2 col-span-6">
               <h3 className="text-white text-24 font-medium">Contact us</h3>
               <p className="text-muted text-opacity-60 text-16 mt-3">
-                SUDHAN-FINTECH PRIVATE LIMITED Registered address - Pasharwar
-                Samaj Temple, Shop No 201, Second Floor, C S NO 1916/14, Plot
-                No. 3, Sakhare Complex, Near Bamul Tower, Kopargaon, Ahmednagar,
-                Maharashtra, 423601 +91 9823807272 +91 7340067400
-                info@sudhan.co.in
+                SUDHAN FINTECH PRIVATE LIMITED A-9, Udyog Mauli,, Dnyaneshwar
+                Nagar, Aurangabad, Aurangabad, Maharashtra, India, 431001
+                +918796306621
               </p>
             </div>
           </div>
