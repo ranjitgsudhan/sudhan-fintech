@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "@/components/Home/Hero";
 import { Metadata } from "next";
-import "@/styles/globals.css";
+import "../app/globals.css";
 import Award from "@/components/Home/award";
 import AboutUs from "@/AboutUs/AboutUs";
 import Neo from "@/components/OurWork/Neo";
