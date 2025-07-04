@@ -1,26 +1,29 @@
 import React from "react";
 import Hero from "@/components/Home/Hero";
-import Work from "@/components/Home/work";
-import TimeLine from "@/components/Home/timeline";
-import Platform from "@/components/Home/platform";
-import Portfolio from "@/components/Home/portfolio";
-import Upgrade from "@/components/Home/upgrade";
-import Perks from "@/components/Home/perks";
 import { Metadata } from "next";
+import Onboard from "@/components/Home/Onboarding";
+import Award from "@/components/Home/award";
+import AboutUs from "@/AboutUs/AboutUs";
+import Neo from "@/components/OurWork/Neo";
+import GapAnalysis from "@/components/OurWork/GapAnalysis";
+import Milestone from "@/components/Home/milestone";
+import Competitive from "@/components/Home/CompetitiveLandscape/Competitive";
+
 export const metadata: Metadata = {
-  title: "CrypGo",
+  title: "Sudhan Fintech",
 };
 
 export default function Home() {
   return (
-    <main>
+     <main className="overflow-hidden">
       <Hero />
-      <Work />
-      <TimeLine />
-      <Platform />
-      <Portfolio />
-      <Upgrade />
-      <Perks />
+      <AboutUs />
+       <Neo />
+       {/* <GapAnalysis /> */}
+      <Award />
+      {/* <Competitive /> */}
+       <Milestone/>
+      {/* <Onboard /> */}
     </main>
   );
 }

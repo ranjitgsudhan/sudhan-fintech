@@ -46,7 +46,7 @@ const config: Config = {
         '999': '999'
       },
       colors: {
-        primary: "#99E39E",
+        primary: "#fbbf24",
         secondary: "#1DC8CD",
         midnight_text: "#263238",
         muted: "#d8dbdb",
@@ -65,6 +65,7 @@ const config: Config = {
         charcoalGray: "#666C78",
         deepSlate: "#282C36",
         slateGray: "#2F3543",
+        sudhan:"#fb9f0c",
       },
       fontSize: {
         86: [
