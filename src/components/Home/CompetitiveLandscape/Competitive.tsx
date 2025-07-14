@@ -5,7 +5,7 @@ const Competitive = () => {
   return (
      <section className="bg-darkmode text-white py-12 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-10">Competitive Landscape</h2>
+        <h2 className="text-3xl font-bold text-center text-white mb-10">Competitive Landscape</h2>
         <div className="overflow-auto">
           <table className="min-w-full border-collapse text-center">
             <thead>

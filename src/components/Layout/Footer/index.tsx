@@ -5,6 +5,7 @@ import { headerData } from "../Header/Navigation/menuData";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
 import Logo from "../Header/Logo";
+import FooterLogo from "./FooterLogo";
 
 const Footer: FC = () => {
   return (
@@ -13,7 +14,7 @@ const Footer: FC = () => {
         <div className="container mx-auto lg:max-w-screen-2xl md:max-w-screen-md">
           <div className="grid grid-cols-1 sm:grid-cols-6 gap-6 pb-5">
             <div className="sm:col-span-2 col-span-6 flex flex-col items-center sm:items-start">
-              <Logo />
+              <FooterLogo />
               <div className="flex gap-6 items-center mt-4">
                 <Link href="#" className="group">
                   <Icon
