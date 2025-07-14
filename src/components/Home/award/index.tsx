@@ -30,7 +30,7 @@ const Award = () => {
             initial={{ opacity: 0, y: -30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
-            className="font-bold text-center sm:text-40 text-30 mb-10"
+            className="font-bold text-center sm:text-40 text-white text-30 mb-10"
           >
             Magic Of Recognition
           </motion.h2>
@@ -44,7 +44,7 @@ const Award = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="lg:w-1/2 w-full px-2"
             >
-              <h3 className="text-[22px] font-bold mb-4 text-center lg:text-left">
+              <h3 className="text-[22px] font-bold mb-4 text-yellow-50 text-center lg:text-left">
                 Golden Keys and Open Doors — The Magic Of Recognition
               </h3>
               <h1 className="font-medium lg:text-[38px] md:text-[34px] text-[30px] text-sudhan lg:text-left text-center">

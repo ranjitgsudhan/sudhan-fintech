@@ -56,8 +56,8 @@ const Hero = () => {
 >
   {/* Background Image */}
   <Image
-    className="absolute inset-0 w-full h-full object-cover -z-10"
-    src={`${getImagePrefix()}images/hero/gold1.jpg`}
+    className="absolute inset-0 w-full h-full object-cover -z-10 "
+    src={`${getImagePrefix()}images/hero/goldz.jpg`}
     alt="Banner"
     fill
   />

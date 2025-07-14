@@ -5,13 +5,12 @@ import Link from "next/link";
 const Logo: React.FC = () => {
   return (
     <Link href="/">
-      <Image
-        src={`${getImagePrefix()}images/logo/logo.svg`}
+      <img
+        src={`${getImagePrefix()}images/logo/logo.png`}
         alt="logo"
-        width={160}
-        height={50}
-        style={{ width: "auto", height: "auto" }}
-        quality={100}
+        // width={100}
+        // height
+        style={{ width: "250px", height: "70px" }}
       />
     </Link>
   );

@@ -21,7 +21,7 @@ const GapAnalysis = () => {
   return (
     <section id="work">
       <div className="bg-darkmode flex flex-col justify-center items-center pt-5 border-b-2 py-10 border-[#FEC637] border-t-2 w-full">
-        <h1 className="md:text-30 text-28 font-bold py-10">Solution Gap Analysis</h1>
+        <h1 className="md:text-30 text-28 text-white font-bold py-10">Solution Gap Analysis</h1>
         <div className="flex flex-col md:flex-row justify-center items-center gap-6 p-6">
           {gapAnalysisData.map((item, index) => (
             <motion.div

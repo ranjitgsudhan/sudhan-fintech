@@ -70,21 +70,24 @@ const Header: React.FC = () => {
   return (
     <header
       className={`fixed top-0 z-40 w-full pb-5 transition-all duration-300 ${
-        sticky ? " shadow-lg bg-darkmode pt-5" : "shadow-none md:pt-14 pt-5"
+        sticky
+          ? "shadow-lg bg-darkmode bg-opacity-90 backdrop-blur-md pt-5"
+          : "shadow-lg bg-darkmode bg-opacity-30 backdrop-blur-sm pt-5 *:"
       }`}
     >
       <div className="lg:py-0 py-2">
         <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md flex items-center justify-between px-4 gap-10">
-          <Logo />
+        <div className="bg-darkmode bg-opacity-50 backdrop-blur-md px-2"> 
+           <Logo />
+        </div>
           <nav className="hidden lg:flex flex-grow items-center gap-8 justify-center">
             {headerData.map((item, index) => (
               <HeaderLink key={index} item={item} />
             ))}
           </nav>
-        
         </div>
         {navbarOpen && (
-          <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40" />
+          <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-0 z-40" />
         )}
         <div
           ref={mobileMenuRef}
@@ -108,7 +111,6 @@ const Header: React.FC = () => {
             {headerData.map((item, index) => (
               <MobileHeaderLink key={index} item={item} />
             ))}
-           
           </nav>
         </div>
       </div>
