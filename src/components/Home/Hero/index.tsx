@@ -2,7 +2,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import CardSlider from "./slider";
 import { useEffect, useRef, useState, useCallback } from "react";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { getImagePrefix } from "@/utils/utils";
@@ -73,12 +72,12 @@ const Hero = () => {
             width={40}
             height={40}
           />
-          <p className="text-white sm:text-28 text-18 mb-0 font-semibold">
+          <p className="text-white sm:text-28 text-28 mb-0 font-semibold">
             Sudhan Fintech <span className="text-primary">Pvt.Ltd</span>
           </p>
         </div>
-        <div className="bg-[#841618] p-6 rounded-lg shadow-lg px-10 w-[45vw]">
-        <h1 className="font-medium lg:text-76 md:text-70 text-54 lg:text-start text-center text-white mb-10 opacity-100 ">
+        <div className="bg-[#841618] p-6 rounded-lg shadow-lg px-10 md:w-[45vw]">
+        <h1 className="font-medium lg:text-76 md:text-70 text-44 lg:text-start text-center text-white md:mb-10 opacity-100 ">
           A Product By <span className="text-primary">SudhanFintech </span>Pvt.Ltd
         </h1>
         </div>

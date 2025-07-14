@@ -7,8 +7,6 @@ import Logo from "./Logo";
 import Image from "next/image";
 import HeaderLink from "../Header/Navigation/HeaderLink";
 import MobileHeaderLink from "../Header/Navigation/MobileHeaderLink";
-import Signin from "@/components/Auth/SignIn";
-import SignUp from "@/components/Auth/SignUp";
 import { useTheme } from "next-themes";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
@@ -72,7 +70,9 @@ const Header: React.FC = () => {
   return (
     <header
       className={`fixed top-0 z-40 w-full pb-5 transition-all duration-300 ${
-        sticky ? " shadow-lg bg-darkmode pt-5" : "shadow-none md:pt-14 pt-5"
+        sticky
+          ? "shadow-lg bg-darkmode bg-opacity-80 backdrop-blur-md pt-5"
+          : "bg-transparent shadow-none md:pt-14 pt-5"
       }`}
     >
       <div className="lg:py-0 py-2">
@@ -83,10 +83,9 @@ const Header: React.FC = () => {
               <HeaderLink key={index} item={item} />
             ))}
           </nav>
-        
         </div>
         {navbarOpen && (
-          <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40" />
+          <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-0 z-40" />
         )}
         <div
           ref={mobileMenuRef}
@@ -110,7 +109,6 @@ const Header: React.FC = () => {
             {headerData.map((item, index) => (
               <MobileHeaderLink key={index} item={item} />
             ))}
-           
           </nav>
         </div>
       </div>

@@ -1,11 +1,11 @@
 import React from "react";
 import Hero from "@/components/Home/Hero";
 import { Metadata } from "next";
-import Onboard from "@/components/Home/Onboarding";
+import "../app/globals.css";
 import Award from "@/components/Home/award";
 import AboutUs from "@/AboutUs/AboutUs";
 import Neo from "@/components/OurWork/Neo";
-import GapAnalysis from "@/components/OurWork/GapAnalysis";
+
 import Milestone from "@/components/Home/milestone";
 
 export const metadata: Metadata = {
@@ -14,12 +14,12 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-hidden">
       <Hero />
-
-       <Award/>
-      <Onboard/>
-      <AboutUs/>
+      <AboutUs />
+      <Neo />
+      <Award />
+      <Milestone />
     </main>
   );
 }
