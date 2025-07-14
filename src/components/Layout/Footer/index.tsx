@@ -14,8 +14,10 @@ const Footer: FC = () => {
         <div className="container mx-auto lg:max-w-screen-2xl md:max-w-screen-md">
           <div className="grid grid-cols-1 sm:grid-cols-6 gap-6 pb-5">
             <div className="sm:col-span-2 col-span-6 flex flex-col items-center sm:items-start">
-              <FooterLogo />
-              <div className="flex gap-6 items-center mt-4">
+              <div className=" border border-primary">
+              <FooterLogo  />
+              </div>
+              {/* <div className="flex gap-6 items-center mt-4">
                 <Link href="#" className="group">
                   <Icon
                     icon="fa6-brands:facebook-f"
@@ -40,7 +42,7 @@ const Footer: FC = () => {
                     className="text-white group-hover:text-primary"
                   />
                 </Link>
-              </div>
+              </div> */}
             </div>
             <div className="sm:col-span-1 col-span-6">
               <h4 className="text-white mb-4 font-medium text-24">Links</h4>
