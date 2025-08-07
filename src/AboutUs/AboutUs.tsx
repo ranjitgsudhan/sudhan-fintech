@@ -36,7 +36,7 @@ const AboutUs = () => {
           Sudhan Team
         </p>
 
-        {/* Team Cards - Centered & Wrapped */}
+        {/* Team Cards */}
         <div className="flex flex-wrap justify-center gap-10 w-full max-w-[1000px]">
           {founders.map((founder, index) => (
             <motion.div
@@ -68,10 +68,9 @@ const AboutUs = () => {
                   </p>
                 </div>
 
-                <p className="text-sm text-gray-400 mt-4 leading-relaxed text-center">
-                  {typeof founder.desc === "string"
-                    ? founder.desc
-                    : founder.desc}
+                {/* Description */}
+                <p className="text-sm text-gray-400 mt-4 leading-relaxed text-center line-clamp-1">
+                  {founder.desc}
                 </p>
               </div>
             </motion.div>
